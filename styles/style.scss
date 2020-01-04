@@ -1,9 +1,9 @@
-//importing an scss file. NOTE: file must start with '_'
+// importing an scss file. NOTE: file must start with '_'
 @import "./header";
-//@import "./variables";
+// @import "./variables";
 
 .contact {
-    //@include flexCenter(row, blue);   
+    // @include flexCenter(row, blue);   
 
     // inheritence. All styles from header will be applied to contact
     @extend header;
@@ -11,6 +11,6 @@
     background: lightcoral;
 
     // calculations:
-    width: 100% - 20%;
+    // width: 100% - 20%;
 }
 

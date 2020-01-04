@@ -15,7 +15,7 @@ $textColor: #1d0202;
 
 header {
 
-    // using 'functions'
+    // using 'functions' aka mixins
     //@include flexCenter(column, red);
     height: 100vh;
     color: $textColor;
@@ -34,6 +34,7 @@ header {
         // }        
     }
 }
+
 // Without nesting:
 // header button {
 //     background: $primaryButton;
