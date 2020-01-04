@@ -1,0 +1,40 @@
+//variable decleration
+$primaryButton: rgb(23, 146, 23);
+$textColor: #1d0202;
+
+// 'functions'
+@mixin flexCenter($direction, $background) {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+    background: $background;
+}
+
+
+header {
+
+    // using 'functions'
+    //@include flexCenter(column, red);
+    height: 100vh;
+    color: $textColor;
+    background: lightblue;
+
+    // Nesting
+    button{
+        background: $primaryButton;
+        // To add hover,focus, etc to button, use '&' symbol:
+        &:hover{
+            background: red;
+        }
+        // To add "after" and "before" need 2 colons
+        // &::after{
+        //     content: "Helloooo";
+        // }        
+    }
+}
+// Without nesting:
+// header button {
+//     background: $primaryButton;
+// }
